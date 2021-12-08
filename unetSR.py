@@ -1,17 +1,13 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon Aug 31 10:47:18 2020
 
-
-ejemplo de clase sin normalización por lotes
+Script with UNet SR class
 
 @author: villacuPC
 """
-import numpy as np
+
 import torch
 import torch.nn as nn
-import torchvision.transforms as transforms
-from torch.autograd import Variable
 
 #%% BLOQUES DE UNET
 class doubleconv2d(nn.Module):
